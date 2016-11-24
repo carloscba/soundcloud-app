@@ -1,0 +1,12 @@
+<ion-view view-title="Tracks">
+  <ion-content>
+    <ion-list>
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="track in tracks" type="item-text-wrap" ng-click = "getTrack($index)">
+        <img ng-src="{{track.artwork_url}}">
+        <h2>{{track.title}}</h2>
+        <p>{{track.description}}</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
